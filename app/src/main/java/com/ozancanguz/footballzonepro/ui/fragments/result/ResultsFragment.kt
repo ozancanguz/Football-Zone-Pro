@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.ozancanguz.footballzonepro.R
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 
 class ResultsFragment : Fragment() {
 
