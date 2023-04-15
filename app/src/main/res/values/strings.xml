@@ -2,4 +2,9 @@
     <string name="app_name">Football Zone Pro</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="away_team">awayteam</string>
+    <string name="date">date</string>
+    <string name="away_score">awayscore</string>
+    <string name="home_score">homescore</string>
+    <string name="home_team">hometeam</string>
 </resources>
