@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/resultsFragment"
+        android:title="Results"
+        android:icon="@drawable/results"></item>
+
+    <item android:id="@+id/rankingFragment"
+        android:title="Ranking"
+        android:icon="@drawable/ranking"></item>
+
+    <item android:id="@+id/goalKingFragment"
+        android:title="Goal Kings"
+        android:icon="@drawable/king"></item>
+</menu>
