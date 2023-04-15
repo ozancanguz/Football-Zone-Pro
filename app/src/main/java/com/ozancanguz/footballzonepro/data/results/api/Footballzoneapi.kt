@@ -1,14 +1,13 @@
 package com.ozancanguz.footballzonepro.data.results.api
 
-import com.ozancanguz.footballzonepro.data.results.Results
+import com.ozancanguz.footballzonepro.data.results.LatestResults
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Headers
 
 interface Footballzoneapi {
 
+    @Headers("authorization: apikey 2xAW88zA1iemGAxzWMNumI:47IyS3uICCasjqzWaFtxnn", "content-type: application/json")
     @GET("results?data.league=super-lig")
-    suspend fun getResults():Response<Results>
-
-
-
+    suspend fun getResults(): Response<LatestResults>
 }

@@ -2,8 +2,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="120dp"
-    android:background="@drawable/rv"
+    android:layout_height="170dp"
+    android:background="@drawable/hl"
+    android:layout_margin="2dp"
     android:padding="8dp">
 
 
@@ -11,60 +12,56 @@
         android:id="@+id/hometeamtv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:text="Home"
+        android:layout_marginStart="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Home Team"
+        android:textColor="#FFEB3B"
+        android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/datetv"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.708" />
+        app:layout_constraintVertical_bias="0.893" />
 
     <TextView
         android:id="@+id/AwayTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="4dp"
+        android:maxLines="15"
         android:text="Away"
+        android:textColor="#FFEB3B"
+        android:textSize="15sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoretv"
         app:srcCompat="@drawable/ball" />
-
-    <TextView
-        android:id="@+id/datetv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
-        android:text="2023-04-15T13:00:00+03:00w"
-        android:textColor="#FFEB3B"
-
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/scoretv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
+        android:maxLines="15"
         android:text="0-0"
-        android:textColor="#E31111"
+
+        android:textColor="#FFEB3B"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/AwayTv"
-        app:layout_constraintStart_toEndOf="@+id/hometeamtv"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

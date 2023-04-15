@@ -6,17 +6,16 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.ozancanguz.footballzonepro.data.repository.Repository
-import com.ozancanguz.footballzonepro.data.results.Results
+import com.ozancanguz.footballzonepro.data.results.LatestResults
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import retrofit2.Response
 import javax.inject.Inject
 
 @HiltViewModel
 class ResultViewModel@Inject constructor(private val repository: Repository, application: Application):AndroidViewModel(application) {
 
 
-    val results=MutableLiveData<Results>()
+    val results=MutableLiveData<LatestResults>()
 
     fun getResults(){
         viewModelScope.launch {
