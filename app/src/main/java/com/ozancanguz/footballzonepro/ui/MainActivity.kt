@@ -1,7 +1,8 @@
-package com.ozancanguz.footballzonepro
+package com.ozancanguz.footballzonepro.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ozancanguz.footballzonepro.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

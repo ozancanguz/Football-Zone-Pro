@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/resultsFragment">
+
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.ozancanguz.footballzonepro.ui.fragments.result.ResultsFragment"
+        android:label="Results"
+        tools:layout="@layout/fragment_results" />
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.ozancanguz.footballzonepro.ui.fragments.ranking.RankingFragment"
+        android:label="Team Rankings"
+        tools:layout="@layout/fragment_ranking" />
+    <fragment
+        android:id="@+id/goalKingFragment"
+        android:name="com.ozancanguz.footballzonepro.ui.fragments.goalking.GoalKingFragment"
+        android:label="Goal Kings"
+        tools:layout="@layout/fragment_goal_king" />
+</navigation>
