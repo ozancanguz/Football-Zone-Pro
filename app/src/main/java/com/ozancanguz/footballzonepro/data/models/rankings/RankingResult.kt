@@ -1,5 +1,9 @@
 package com.ozancanguz.footballzonepro.data.models.rankings
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class RankingResult(
     val draw: Int,
     val goalagainst: Int,
@@ -11,4 +15,4 @@ data class RankingResult(
     val rank: Int,
     val team: String,
     val win: Int
-)
+):Parcelable

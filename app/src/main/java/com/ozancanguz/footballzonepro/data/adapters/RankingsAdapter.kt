@@ -3,11 +3,13 @@ package com.ozancanguz.footballzonepro.data.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.footballzonepro.R
 import com.ozancanguz.footballzonepro.data.models.rankings.RankingResult
 import com.ozancanguz.footballzonepro.data.models.rankings.Rankings
 import com.ozancanguz.footballzonepro.databinding.RankingsRvRowLayoutBinding
+import com.ozancanguz.footballzonepro.ui.fragments.ranking.RankingFragmentDirections
 
 class RankingsAdapter : RecyclerView.Adapter<RankingsAdapter.RankingsViewHolder>() {
 
@@ -17,6 +19,7 @@ class RankingsAdapter : RecyclerView.Adapter<RankingsAdapter.RankingsViewHolder>
             binding.ranktextview.text = rank.rank.toString()
             binding.teamtv.text = rank.team
             binding.pointtv.text = rank.point.toString()
+
         }
     }
 
@@ -40,5 +43,9 @@ class RankingsAdapter : RecyclerView.Adapter<RankingsAdapter.RankingsViewHolder>
     override fun onBindViewHolder(holder: RankingsViewHolder, position: Int) {
         val currentRank = rankingsList[position]
         holder.bind(currentRank)
+        holder.itemView.setOnClickListener {
+            val directions=RankingFragmentDirections.actionRankingFragmentToRankingDetailsFragment(currentRank)
+            holder.itemView.findNavController().navigate(directions)
+        }
     }
 }

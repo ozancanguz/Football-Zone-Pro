@@ -18,7 +18,11 @@
         android:id="@+id/rankingFragment"
         android:name="com.ozancanguz.footballzonepro.ui.fragments.ranking.RankingFragment"
         android:label="Team Rankings"
-        tools:layout="@layout/fragment_ranking" />
+        tools:layout="@layout/fragment_ranking" >
+        <action
+            android:id="@+id/action_rankingFragment_to_rankingDetailsFragment"
+            app:destination="@id/rankingDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/goalKingFragment"
         android:name="com.ozancanguz.footballzonepro.ui.fragments.goalking.GoalKingFragment"
@@ -35,5 +39,17 @@
         <argument
             android:name="result"
             app:argType="com.ozancanguz.footballzonepro.data.results.Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/rankingDetailsFragment"
+        android:name="com.ozancanguz.footballzonepro.ui.fragments.ranking.RankingDetailsFragment"
+        android:label="Team Details"
+        tools:layout="@layout/fragment_ranking_details" >
+        <action
+            android:id="@+id/action_rankingDetailsFragment_to_rankingFragment"
+            app:destination="@id/rankingFragment" />
+        <argument
+            android:name="currentRank"
+            app:argType="com.ozancanguz.footballzonepro.data.models.rankings.RankingResult" />
     </fragment>
 </navigation>
