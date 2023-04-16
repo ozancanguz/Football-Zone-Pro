@@ -27,7 +27,7 @@
     <fragment
         android:id="@+id/resultDetailsFragment"
         android:name="com.ozancanguz.footballzonepro.ui.fragments.result.ResultDetailsFragment"
-        android:label="fragment_result_details"
+        android:label="Result Details"
         tools:layout="@layout/fragment_result_details" >
         <action
             android:id="@+id/action_resultDetailsFragment_to_resultsFragment"

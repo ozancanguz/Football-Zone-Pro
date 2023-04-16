@@ -29,12 +29,20 @@ class ResultDetailsFragment : Fragment() {
         val view = binding.root
 
 
-        Log.d("details"," "+args.result.skor)
+        // get details from result screen
+        getResultDetails()
 
 
 
         return view
 
+    }
+
+    private fun getResultDetails() {
+        binding.detailsScoretv.text=args.result.skor
+        binding.detailsawaytv.text=args.result.away
+        binding.detailshometv.text=args.result.home
+        binding.detailsscreendatetv.text=args.result.date
     }
 
 
