@@ -48,9 +48,13 @@ class ResultsFragment : Fragment() {
     }
 
     private fun observeResultLiveData() {
+        binding.resultprogressBar.visibility=View.VISIBLE
         resultViewModel.getResults()
         resultViewModel.results.observe(viewLifecycleOwner, Observer {
             resultAdapter.setResults(it)
+            binding.resultprogressBar.visibility=View.INVISIBLE
+
+
         })
     }
 

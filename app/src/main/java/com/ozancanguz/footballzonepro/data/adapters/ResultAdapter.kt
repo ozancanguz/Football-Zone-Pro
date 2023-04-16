@@ -3,9 +3,11 @@ package com.ozancanguz.footballzonepro.data.adapters
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.footballzonepro.data.results.LatestResults
 import com.ozancanguz.footballzonepro.databinding.ResultRvRowlayoutBinding
+import com.ozancanguz.footballzonepro.ui.fragments.result.ResultsFragmentDirections
 
 class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ResultViewHolder>() {
     inner class ResultViewHolder(val binding: ResultRvRowlayoutBinding) :
@@ -33,6 +35,11 @@ class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ResultViewHolder>() {
         holder.binding.hometeamtv.text = currentResult.home
         holder.binding.AwayTv.text = currentResult.away
         holder.binding.scoretv.text = currentResult.skor
+
+        holder.itemView.setOnClickListener {
+            val directions=ResultsFragmentDirections.actionResultsFragmentToResultDetailsFragment(currentResult)
+            holder.itemView.findNavController().navigate(directions)
+        }
 
     }
 

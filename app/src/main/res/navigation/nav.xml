@@ -9,7 +9,11 @@
         android:id="@+id/resultsFragment"
         android:name="com.ozancanguz.footballzonepro.ui.fragments.result.ResultsFragment"
         android:label="Results"
-        tools:layout="@layout/fragment_results" />
+        tools:layout="@layout/fragment_results" >
+        <action
+            android:id="@+id/action_resultsFragment_to_resultDetailsFragment"
+            app:destination="@id/resultDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/rankingFragment"
         android:name="com.ozancanguz.footballzonepro.ui.fragments.ranking.RankingFragment"
@@ -20,4 +24,16 @@
         android:name="com.ozancanguz.footballzonepro.ui.fragments.goalking.GoalKingFragment"
         android:label="Goal Kings"
         tools:layout="@layout/fragment_goal_king" />
+    <fragment
+        android:id="@+id/resultDetailsFragment"
+        android:name="com.ozancanguz.footballzonepro.ui.fragments.result.ResultDetailsFragment"
+        android:label="fragment_result_details"
+        tools:layout="@layout/fragment_result_details" >
+        <action
+            android:id="@+id/action_resultDetailsFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+        <argument
+            android:name="result"
+            app:argType="com.ozancanguz.footballzonepro.data.results.Result" />
+    </fragment>
 </navigation>
