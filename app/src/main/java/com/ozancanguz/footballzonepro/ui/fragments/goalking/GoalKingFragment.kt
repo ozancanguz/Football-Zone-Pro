@@ -51,9 +51,12 @@ class GoalKingFragment : Fragment() {
     }
 
     private fun observeGoalKingLiveData(){
+        binding.goalkingsPb.visibility=View.VISIBLE
         goalKingViewModel.getGoalKings()
         goalKingViewModel.goalKingsList.observe(viewLifecycleOwner, Observer {
             goalKingsAdapter.setGoalKingsData(it)
+            binding.goalkingsPb.visibility=View.INVISIBLE
+
         })
     }
 
