@@ -1,6 +1,7 @@
 package com.ozancanguz.footballzonepro.data.remote
 
 import android.util.Log
+import com.ozancanguz.footballzonepro.data.models.goalkings.GoalKings
 import com.ozancanguz.footballzonepro.data.models.rankings.Rankings
 import com.ozancanguz.footballzonepro.data.results.LatestResults
 import com.ozancanguz.footballzonepro.data.results.api.Footballzoneapi
@@ -23,6 +24,10 @@ class RemoteDataSource@Inject constructor(private val footballzoneapi: Footballz
 
     suspend fun getRankings():Response<Rankings>{
         return footballzoneapi.getRankings()
+    }
+
+    suspend fun getGoalKings():Response<GoalKings>{
+        return footballzoneapi.getGoalKings()
     }
 
 
