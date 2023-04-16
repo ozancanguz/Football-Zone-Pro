@@ -3,6 +3,7 @@ package com.ozancanguz.footballzonepro.data.remote
 import android.util.Log
 import com.ozancanguz.footballzonepro.data.results.LatestResults
 import com.ozancanguz.footballzonepro.data.results.api.Footballzoneapi
+
 import retrofit2.Response
 import javax.inject.Inject
 

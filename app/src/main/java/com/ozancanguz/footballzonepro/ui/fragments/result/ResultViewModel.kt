@@ -5,8 +5,8 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.ozancanguz.footballzonepro.data.repository.Repository
 import com.ozancanguz.footballzonepro.data.results.LatestResults
+import com.ozancanguz.footballzonepro.data.repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

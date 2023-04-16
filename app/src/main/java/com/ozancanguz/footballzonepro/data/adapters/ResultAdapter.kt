@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.ozancanguz.footballzonepro.data.results.LatestResults
+import com.ozancanguz.footballzonepro.data.results.Result
 import com.ozancanguz.footballzonepro.databinding.ResultRvRowlayoutBinding
 import com.ozancanguz.footballzonepro.ui.fragments.result.ResultsFragmentDirections
 
@@ -14,7 +15,7 @@ class ResultAdapter : RecyclerView.Adapter<ResultAdapter.ResultViewHolder>() {
         RecyclerView.ViewHolder(binding.root) {
     }
 
-    var resultList = emptyList<com.ozancanguz.footballzonepro.data.results.Result>()
+    var resultList = emptyList<Result>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ResultViewHolder {
         val binding = ResultRvRowlayoutBinding.inflate(
