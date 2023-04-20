@@ -4,6 +4,10 @@ I have developed an android game that displays result,rankings and goal kings on
 Super League using modern android language Kotlin and libraries such as Navigation,retrofit,livedata
 viewmodel etc.
 
+# Demo 
+![football zone demo](https://user-images.githubusercontent.com/64928807/233372972-8aee2db1-4f31-4599-8172-57516d3db5fa.gif)
+
+
 # Architecture
 
 This app implements MVVM architecture. App consist of different fragments and 1 root activity. Activity holds a container layout in order to manage fragments which will be controlled by navigation component. Here is the package structure:
