@@ -4,6 +4,15 @@ I have developed an android game that displays result,rankings and goal kings on
 Super League using modern android language Kotlin and libraries such as Navigation,retrofit,livedata
 viewmodel etc.
 
+# Screenshots
+![1splash](https://user-images.githubusercontent.com/64928807/234284702-629584d7-37ce-41bd-8bf9-d9f3fac5c0b3.PNG)
+![2results](https://user-images.githubusercontent.com/64928807/234284731-a4090592-890b-4da7-b182-82bee49fffb7.PNG)
+![3resultsdetails](https://user-images.githubusercontent.com/64928807/234284758-aac19087-3103-4d2c-ab3f-818635ed3ba9.PNG)
+![4teamrankings](https://user-images.githubusercontent.com/64928807/234284779-65225fc6-fde5-4b42-ba4a-8cb2e33307fe.PNG)
+![5teamrankingsdetails](https://user-images.githubusercontent.com/64928807/234284794-86eca358-8f3d-4a7a-94f2-734f163eac73.PNG)
+![6goalkings](https://user-images.githubusercontent.com/64928807/234284816-14e01250-537a-4d51-8342-f5997185a7f3.PNG)
+
+
 # Demo 
 ![football zone demo](https://user-images.githubusercontent.com/64928807/233372972-8aee2db1-4f31-4599-8172-57516d3db5fa.gif)
 
